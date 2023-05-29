@@ -28,7 +28,11 @@ namespace problems
             {
                 foreach (var article in Articles)
                 {
-                    return article.ToString();
+                    if(article.GetItemName() == item)
+                    {
+                        return article.ToString();
+                    }
+                    
                 }
                 return "No Value";
             }

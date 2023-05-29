@@ -19,16 +19,16 @@ namespace problems
     //P.S მოახდინეთ ინდექსატორის ვალიდაცია
     internal class Article
     {
-        private int ItemName { get; set;}
+        private string ItemName { get; set;}
         private string StoreName { get; set;}
         private double Price { get; set; }
 
-        public int GetItemName()
+        public string GetItemName()
         {
             return ItemName;
         }
 
-        public void SetItemName(int val)
+        public void SetItemName(string val)
         {
             this.ItemName = val;
         }
